@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Expenses Chart</title>
+  </head>
+  <body onload="FetchData()">
+    <main class="container">
+      <div class="card">
+        <section class="header">
+          <div class="balance">
+            <span class="metadata">My balance</span>
+            <span class="balance-number">$921.48</span>
+          </div>
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+        </section>
+        <section class="content">
+          <div class="heading">Spending - Last 7 days</div>
+          <div class="chart"></div>
+          <hr width="100%" style="opacity: 0.2" />
+          <div class="total-spending">
+            <div class="this-month">
+              <span class="metadata">Total this month</span>
+              <span class="this-month-number">$478.33</span>
+            </div>
+            <div class="previous-month">
+              <span class="previous-month-number">+2.4%</span>
+              <span class="metadata">from last month</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./javascript/app.js"></script>
+  </body>
+</html>
